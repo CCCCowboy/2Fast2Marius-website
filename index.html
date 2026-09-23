@@ -44,15 +44,46 @@ video {
 My website is coming soon...
 </h1>
 
-<video width="720" height="480" autoplay muted>
-  <source src="Videos/Showreel.mp4" type="video/mp4">
+<div style="text-align:center"> 
+  <video id="video1" width="720" autoplay muted>
+    <source src="Videos/Showreel.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
 
-	Your browser does not support the video tag.
-</video>
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+</div> 
+
 	
 <h1>
 ...Until then, enjoy the showreel!
 </h1>
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1920; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 640; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 720; 
+} 
+</script> 
 
 </body>
 
