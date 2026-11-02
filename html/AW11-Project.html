@@ -1,0 +1,165 @@
+<html>
+
+<head> 
+	<title>Webtest</title>
+</head>
+
+	
+<style> 
+
+	@font-face {
+	font-family: "MyFont";
+	src: local("Font/1942.ttf") format("truetype");
+	}
+	
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html{
+		scroll-behavior: smooth;
+	}
+
+	body{
+		background-color:#D9D9D9 ;
+		padding: 0 20px;
+	}
+
+	.myHeader{
+		background-image: url("../images/banner1.png");
+		height: 150px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.container{
+		max-width: 1200px;
+		width: auto;
+		margin: 0 auto;
+		min-height: 85vh;
+		background-color:#BDBDBD;
+	}
+
+	.layout{
+		display: flex;
+		min height: 85vh;
+		aspect-ratio: 4 / 3;
+	}
+
+	.nav-bar{
+		display: flex;
+		width: 220px;
+		background-color: #C5C5C5;
+		padding: 40px 25px;
+		flex-direction: column;
+		gap: 30px;
+		top: 0;
+		position: sticky;
+		min-height: 85vh;
+		overflow: scroll; 
+		margin-top: 0;
+	}
+
+		.nav-bar a{
+			text-decoration: underline;
+			font-size: 25;
+		}
+
+		.nav-bar a:hover{
+			text-decoration: underline;
+			color:black;
+		}
+
+	.content{
+		flex: 1;
+		padding: 50px;
+		min-width: 0;
+		aspect-ratio: 3 / 3;
+		overflow: scroll; 
+		margin-top: 0;
+	}
+
+	/*phone*/
+	@media (max-width: 600px){
+		.nav-bar{
+			width: 100px;
+			gap: 20px;
+			padding: 20px 12px;
+		}
+
+			.nav-bar a{
+				font-size: 15;
+				
+			}
+	}
+
+	
+</style>
+
+
+<body> 
+<div class="container">
+	<div class="myHeader"></div>
+		
+	
+	<div class="layout"> 
+
+		<nav class="nav-bar">
+			<a href="../index.html">Home</a>
+			<a href="html/aboutMe.html">About me</a>
+			<h2> Game Projects </h2>
+			<h2> 3D Projects </h2>
+			<a href="html/W30-Project.html">MR2 '02</a>
+			<a href="AW11-Project.html">MR2 '89</a>
+			<h2> External links </h2>
+			<a href="https://cccowboy.itch.io/">itch.io</a>
+
+		</nav>
+
+		<main class="content">
+	
+			<h1>1989 AW11 Toyota MR2 - 3D Project (WIP)</h1>
+			<br></br>
+			<h3>Statistics:</h3>
+			<p>Tri Count: 1,273</p>
+			<p>Goal: ~2,000</p>
+			<p>Texture size: TBA</p>
+			<br></br>
+			<h3>About:</h3>
+			<p>This is my latest Project. A 1989 Toyota MR2 AW11. 
+			My goal With this Project has been to to practice modeling a PS2/3-era car With full interior. 
+			I intend to keep the model under or around 2,000 triangles and use at most a 1024x1024 texture. 
+			For now i've used a placeholder blueprint from 'the-blueprints.com', 
+			but i intend on making my own texture for the car once i'm satisfied With the model.</p>
+			<br></br>
+
+			<p>My inspiration for this model has been the cars in GTA 4 and older racing games such as Richard Burns Rallye and Gran Turismo 4.</p>
+			<p>When the model is finished it will have a full interior as well as opening doors, Hood & trunk lids. 
+			The headlights will be able to open and Close as well. </p>
+			<br></br>
+
+			<h3>Pictures:</h3>
+			<br></br>
+			<img src="../images/AW11_1.png" alt="Wireframe screenshot 1" style="max-width: 768px">
+			<br></br>
+			<img src="../images/AW11_2.png" alt="Wireframe screenshot 2" style="max-width: 768px">
+			<br></br>
+			<img src="../images/AW11_WIP_SIde.png" alt="Wireframe screenshot 2" style="max-width: 768px">
+			<br></br>
+			<img src="../images/AW11_WIP_Top.png" alt="Wireframe screenshot 2" style="max-width: 768px">
+			<br></br>
+			<img src="../images/AW11_WIP_F_B.png" alt="Wireframe screenshot 2" style="max-width: 768px">
+			<br></br>
+			
+
+		</main>
+	</div>
+	
+	
+</div>
+</body>
+
+</html>
